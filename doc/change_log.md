@@ -43,3 +43,7 @@ Barani included example, header file with static asserts in the attachment.
 ## 7-May-2025
 
 Benny fixed the review commands from Barani, except the item 4 (Using float for real & filter values)
+
+## 7-May-2025 - Update 1
+
+ENABL updated float for real and filt values & int32_t for 2-scomplement temperature values in LC register headers

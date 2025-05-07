@@ -477,10 +477,10 @@ typedef struct {
     uint32_t padding;
 
     /* 0x0008: Real DC Voltage Measurements */
-    uint32_t ana_1_u_dc_real[2];                                           /* DC1 real voltage measurement 32-bit float */
+    float    ana_1_u_dc_real[2];                                           /* DC1 real voltage measurement 32-bit float */
 
     /* 0x0010: Filtered DC Current Measurements */
-    uint32_t ana_1_i_dc_filt[2];                                           /* DC1 Filtered Real current measurement */
+    float    ana_1_i_dc_filt[2];                                           /* DC1 Filtered Real current measurement */
 
     /* 0x0018: Raw DC Measurements */
     struct _ana_1_dc {
@@ -503,18 +503,18 @@ typedef struct {
     } ana_1_psu_filt;
 
     /* 0x0028: Filtered DC Voltage Measurements */
-    uint32_t ana_1_u_dc_filt[2];                                           /* DC1 Filtered Real voltage measurement */
+    float    ana_1_u_dc_filt[2];                                           /* DC1 Filtered Real voltage measurement */
 
     /* 0x0030: Real DC Current Measurements */
-    uint32_t ana_1_i_dc_real[2];                                           /* DC1 real current measurement 32-bit float */
+    float    ana_1_i_dc_real[2];                                           /* DC1 real current measurement 32-bit float */
 
     /* Padding 0x0038 - 0x006C */
     uint32_t padding_1[14];
 
     /* 0x0070: Raw Temperatures Reg */
     struct _temp_1_temp_raw_1 {
-        uint32_t jtype1_raw                                   : 16;        /* Bit 15 ..  0 */ /* JTYPE1 Raw temperature */
-        uint32_t jtype2_raw                                   : 16;        /* Bit 31 .. 16 */ /* JTYPE2 Raw temperature */
+        int32_t  jtype1_raw                                   : 16;        /* Bit 15 ..  0 */ /* JTYPE1 Raw temperature */
+        int32_t  jtype2_raw                                   : 16;        /* Bit 31 .. 16 */ /* JTYPE2 Raw temperature */
     } temp_1_temp_raw_1;
 
     /* Padding 0x0074 - 0x0078 */
@@ -522,8 +522,8 @@ typedef struct {
 
     /* 0x007C: Raw Temperatures Reg */
     struct _temp_1_temp_raw_0 {
-        uint32_t pt100_raw                                    : 16;        /* Bit 15 ..  0 */ /* PT100 Raw temperature */
-        uint32_t board_raw                                    : 16;        /* Bit 31 .. 16 */ /* onboard Raw temperature */
+        int32_t  pt100_raw                                    : 16;        /* Bit 15 ..  0 */ /* PT100 Raw temperature */
+        int32_t  board_raw                                    : 16;        /* Bit 31 .. 16 */ /* onboard Raw temperature */
     } temp_1_temp_raw_0;
 
     /* Padding 0x0080 - 0x0084 */
@@ -531,8 +531,8 @@ typedef struct {
 
     /* 0x0088: Real Temperatures Reg */
     struct _temp_1_temp_real_1 {
-        uint32_t pt100_real                                   : 16;        /* Bit 15 ..  0 */ /* PT100 real temperature */
-        uint32_t board_real                                   : 16;        /* Bit 31 .. 16 */ /* onboard real temperature */
+        int32_t  pt100_real                                   : 16;        /* Bit 15 ..  0 */ /* PT100 real temperature */
+        int32_t  board_real                                   : 16;        /* Bit 31 .. 16 */ /* onboard real temperature */
     } temp_1_temp_real_1;
 
     /* Padding 0x008C - 0x009C */
