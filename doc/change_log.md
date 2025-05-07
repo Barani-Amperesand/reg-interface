@@ -47,3 +47,16 @@ Benny fixed the review commands from Barani, except the item 4 (Using float for 
 ## 7-May-2025 - Update 1
 
 ENABL updated float for real and filt values & int32_t for 2-scomplement temperature values in LC register headers
+
+
+## 7-May-2025 - Update 2
+
+### ENABL updates
+- float for real and filt values
+- int*_t for 2-scomplement temperature values
+- instead of uint32_t/int32_t then uint8_t/uint16_t/uint32_t / int8_t/int16_t/int32_t is used for values up to 8/16/32 bit.
+
+### AMP reviews
+- There are compile errors due to static assert related to changing uint32_t to other int types.
+- Will feedback to reverst this change.
+

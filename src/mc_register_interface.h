@@ -317,83 +317,83 @@
 typedef struct {
     /* 0x0000: BC11 ADC Sampling */
     struct _ana_1_BC11 {
-        uint32_t bc11_raw                                     : 12;        /* Bit 11 ..  0 */ /* ADC sample */
-        uint32_t bc11_trig                                    :  1;        /* Bit 12 .. 12 */ /* 1: trigger */
+        uint16_t bc11_raw                                     : 12;        /* Bit 11 ..  0 */ /* ADC sample */
+        uint8_t  bc11_trig                                    :  1;        /* Bit 12 .. 12 */ /* 1: trigger */
         uint32_t padding                                      : 19;        /* Bit 31 .. 13 */ /* Padding */
     } ana_1_BC11;
 
     /* 0x0004: BC22 ADC Sampling */
     struct _ana_1_BC22 {
-        uint32_t bc22_raw                                     : 12;        /* Bit 11 ..  0 */ /* ADC sample */
-        uint32_t bc22_trig                                    :  1;        /* Bit 12 .. 12 */ /* 1: trigger */
+        uint16_t bc22_raw                                     : 12;        /* Bit 11 ..  0 */ /* ADC sample */
+        uint8_t  bc22_trig                                    :  1;        /* Bit 12 .. 12 */ /* 1: trigger */
         uint32_t padding                                      : 19;        /* Bit 31 .. 13 */ /* Padding */
     } ana_1_BC22;
 
     /* 0x0008: BC32 ADC Sampling */
     struct _ana_1_BC32 {
-        uint32_t bc32_raw                                     : 12;        /* Bit 11 ..  0 */ /* ADC sample */
-        uint32_t bc32_trig                                    :  1;        /* Bit 12 .. 12 */ /* 1: trigger */
+        uint16_t bc32_raw                                     : 12;        /* Bit 11 ..  0 */ /* ADC sample */
+        uint8_t  bc32_trig                                    :  1;        /* Bit 12 .. 12 */ /* 1: trigger */
         uint32_t padding                                      : 19;        /* Bit 31 .. 13 */ /* Padding */
     } ana_1_BC32;
 
     /* 0x000C: BC11_I_SG ADC Sampling */
     struct _ana_1_BC11_I_SG {
-        uint32_t bc11_i_sg_raw                                : 12;        /* Bit 11 ..  0 */ /* ADC Sample */
+        uint16_t bc11_i_sg_raw                                : 12;        /* Bit 11 ..  0 */ /* ADC Sample */
         uint32_t padding                                      : 20;        /* Bit 31 .. 12 */ /* Padding */
     } ana_1_BC11_I_SG;
 
     /* 0x0010: BC21_I_SG ADC Sampling */
     struct _ana_1_BC21_I_SG {
-        uint32_t bc21_i_sg_raw                                : 12;        /* Bit 11 ..  0 */ /* ADC Sample */
+        uint16_t bc21_i_sg_raw                                : 12;        /* Bit 11 ..  0 */ /* ADC Sample */
         uint32_t padding                                      : 20;        /* Bit 31 .. 12 */ /* Padding */
     } ana_1_BC21_I_SG;
 
     /* 0x0014: BC31_I_SG ADC Sampling */
     struct _ana_1_BC31_I_SG {
-        uint32_t bc31_i_sg_raw                                : 12;        /* Bit 11 ..  0 */ /* ADC Sample */
+        uint16_t bc31_i_sg_raw                                : 12;        /* Bit 11 ..  0 */ /* ADC Sample */
         uint32_t padding                                      : 20;        /* Bit 31 .. 12 */ /* Padding */
     } ana_1_BC31_I_SG;
 
     /* 0x0018: BA12 ADC Sampling */
     struct _ana_1_BA12 {
-        uint32_t ba12_raw                                     : 12;        /* Bit 11 ..  0 */ /* ADC Sample */
+        uint16_t ba12_raw                                     : 12;        /* Bit 11 ..  0 */ /* ADC Sample */
         uint32_t padding                                      : 20;        /* Bit 31 .. 12 */ /* Padding */
     } ana_1_BA12;
 
     /* 0x001C: BA22 ADC Sampling */
     struct _ana_1_BA22 {
-        uint32_t ba22_raw                                     : 12;        /* Bit 11 ..  0 */ /* ADC Sample */
+        uint16_t ba22_raw                                     : 12;        /* Bit 11 ..  0 */ /* ADC Sample */
         uint32_t padding                                      : 20;        /* Bit 31 .. 12 */ /* Padding */
     } ana_1_BA22;
 
     /* 0x0020: BA32 ADC Sampling */
     struct _ana_1_BA32 {
-        uint32_t ba32_raw                                     : 12;        /* Bit 11 ..  0 */ /* ADC Sample */
+        uint16_t ba32_raw                                     : 12;        /* Bit 11 ..  0 */ /* ADC Sample */
         uint32_t padding                                      : 20;        /* Bit 31 .. 12 */ /* Padding */
     } ana_1_BA32;
 
     /* 0x0024: BA12_V_SG ADC Sampling */
     struct _ana_1_BA12_V_SG {
-        uint32_t ba12_v_sg_raw                                : 12;        /* Bit 11 ..  0 */ /* ADC Sample */
+        uint16_t ba12_v_sg_raw                                : 12;        /* Bit 11 ..  0 */ /* ADC Sample */
         uint32_t padding                                      : 20;        /* Bit 31 .. 12 */ /* Padding */
     } ana_1_BA12_V_SG;
 
     /* 0x0028: BA22_V_SG ADC Sampling */
     struct _ana_1_BA22_V_SG {
-        uint32_t ba22_v_sg_raw                                : 12;        /* Bit 11 ..  0 */ /* ADC Sample */
+        uint16_t ba22_v_sg_raw                                : 12;        /* Bit 11 ..  0 */ /* ADC Sample */
         uint32_t padding                                      : 20;        /* Bit 31 .. 12 */ /* Padding */
     } ana_1_BA22_V_SG;
 
     /* 0x002C: BA32_V_SG ADC Sampling */
     struct _ana_1_BA32_V_SG {
-        uint32_t ba32_v_sg_raw                                : 12;        /* Bit 11 ..  0 */ /* ADC Sample */
+        uint16_t ba32_v_sg_raw                                : 12;        /* Bit 11 ..  0 */ /* ADC Sample */
         uint32_t padding                                      : 20;        /* Bit 31 .. 12 */ /* Padding */
     } ana_1_BA32_V_SG;
 
     /* 0x0030: BA72 ADC Sampling */
     struct _ana_1_BA72 {
-        uint32_t ba72_raw                                     : 12;        /* Bit 11 ..  0 */ /* ADC Sample */
-        uint32_t ba72_trig                                    :  1;        /* Bit 12 .. 12 */ /* 1: trigger */
+        uint16_t ba72_raw                                     : 12;        /* Bit 11 ..  0 */ /* ADC Sample */
+        uint8_t  ba72_trig                                    :  1;        /* Bit 12 .. 12 */ /* 1: trigger */
         uint32_t padding                                      : 19;        /* Bit 31 .. 13 */ /* Padding */
     } ana_1_BA72;
 
@@ -402,7 +402,7 @@ typedef struct {
 
     /* 0x0064: gpi */
     struct _gpi_1_gpi {
-        uint32_t d_in_24v                                     :  8;        /* Bit  7 ..  0 */ /* 0/1: off/on */
+        uint8_t  d_in_24v                                     :  8;        /* Bit  7 ..  0 */ /* 0/1: off/on */
         uint32_t padding                                      : 24;        /* Bit 31 ..  8 */ /* Padding */
     } gpi_1_gpi;
 
@@ -414,8 +414,8 @@ typedef struct {
 
     /* 0x0070: S-Temp Temperature measurement */
     struct _temp_1_s_temp {
-        uint32_t s_temp                                       : 12;        /* Bit 11 ..  0 */ /* Temperature */
-        uint32_t s_temp_ack_err                               :  1;        /* Bit 12 .. 12 */ /* 1: ack error */
+        uint16_t s_temp                                       : 12;        /* Bit 11 ..  0 */ /* Temperature */
+        uint8_t  s_temp_ack_err                               :  1;        /* Bit 12 .. 12 */ /* 1: ack error */
         uint32_t padding                                      : 19;        /* Bit 31 .. 13 */ /* Padding */
     } temp_1_s_temp;
 
@@ -425,297 +425,297 @@ typedef struct {
 typedef struct {
     /* 0x0000: Control register for link to LVC */
     struct _link_1_link_ctrl_lvc {
-        uint32_t dp_start_adr_lvc                             :  7;        /* Bit  6 ..  0 */ /* 7-bit Word-Address */
+        uint8_t  dp_start_adr_lvc                             :  7;        /* Bit  6 ..  0 */ /* 7-bit Word-Address */
         uint32_t padding                                      :  1;        /* Bit  7 ..  7 */ /* Padding */
-        uint32_t dp_end_adr_lvc                               :  7;        /* Bit 14 ..  8 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
+        uint8_t  dp_end_adr_lvc                               :  7;        /* Bit 14 ..  8 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
         uint32_t padding_1                                    :  1;        /* Bit 15 .. 15 */ /* Padding */
-        uint32_t tx_rep_per                                   :  8;        /* Bit 23 .. 16 */ /* 1 LSB = 1 us */
-        uint32_t auto_xfer_en                                 :  1;        /* Bit 24 .. 24 */ /* 0/1: Disable / Enable */
-        uint32_t xfer_now                                     :  1;        /* Bit 25 .. 25 */ /* 1: initiate Transfer (must be cleared by SW) */
+        uint8_t  tx_rep_per                                   :  8;        /* Bit 23 .. 16 */ /* 1 LSB = 1 us */
+        uint8_t  auto_xfer_en                                 :  1;        /* Bit 24 .. 24 */ /* 0/1: Disable / Enable */
+        uint8_t  xfer_now                                     :  1;        /* Bit 25 .. 25 */ /* 1: initiate Transfer (must be cleared by SW) */
         uint32_t padding_2                                    :  6;        /* Bit 31 .. 26 */ /* Padding */
     } link_1_link_ctrl_lvc;
 
     /* 0x0004: Control register for link to MVC */
     struct _link_1_link_ctrl_mvc {
-        uint32_t dp_start_adr_mvc1                            :  7;        /* Bit  6 ..  0 */ /* 7-bit Word-Address */
+        uint8_t  dp_start_adr_mvc1                            :  7;        /* Bit  6 ..  0 */ /* 7-bit Word-Address */
         uint32_t padding                                      :  1;        /* Bit  7 ..  7 */ /* Padding */
-        uint32_t dp_end_adr_mvc1                              :  7;        /* Bit 14 ..  8 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
+        uint8_t  dp_end_adr_mvc1                              :  7;        /* Bit 14 ..  8 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
         uint32_t padding_1                                    :  1;        /* Bit 15 .. 15 */ /* Padding */
-        uint32_t dp_start_adr_mvc2                            :  7;        /* Bit 22 .. 16 */ /* 7-bit Word-Address */
+        uint8_t  dp_start_adr_mvc2                            :  7;        /* Bit 22 .. 16 */ /* 7-bit Word-Address */
         uint32_t padding_2                                    :  1;        /* Bit 23 .. 23 */ /* Padding */
-        uint32_t dp_end_adr_mvc2                              :  7;        /* Bit 30 .. 24 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
+        uint8_t  dp_end_adr_mvc2                              :  7;        /* Bit 30 .. 24 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
         uint32_t padding_3                                    :  1;        /* Bit 31 .. 31 */ /* Padding */
     } link_1_link_ctrl_mvc;
 
     /* 0x0008: Control register for link to LVC */
     struct _link_2_link_ctrl_lvc {
-        uint32_t dp_start_adr_lvc                             :  7;        /* Bit  6 ..  0 */ /* 7-bit Word-Address */
+        uint8_t  dp_start_adr_lvc                             :  7;        /* Bit  6 ..  0 */ /* 7-bit Word-Address */
         uint32_t padding                                      :  1;        /* Bit  7 ..  7 */ /* Padding */
-        uint32_t dp_end_adr_lvc                               :  7;        /* Bit 14 ..  8 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
+        uint8_t  dp_end_adr_lvc                               :  7;        /* Bit 14 ..  8 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
         uint32_t padding_1                                    :  1;        /* Bit 15 .. 15 */ /* Padding */
-        uint32_t tx_rep_per                                   :  8;        /* Bit 23 .. 16 */ /* 1 LSB = 1 us */
-        uint32_t auto_xfer_en                                 :  1;        /* Bit 24 .. 24 */ /* 0/1: Disable / Enable */
-        uint32_t xfer_now                                     :  1;        /* Bit 25 .. 25 */ /* 1: initiate Transfer (must be cleared by SW) */
+        uint8_t  tx_rep_per                                   :  8;        /* Bit 23 .. 16 */ /* 1 LSB = 1 us */
+        uint8_t  auto_xfer_en                                 :  1;        /* Bit 24 .. 24 */ /* 0/1: Disable / Enable */
+        uint8_t  xfer_now                                     :  1;        /* Bit 25 .. 25 */ /* 1: initiate Transfer (must be cleared by SW) */
         uint32_t padding_2                                    :  6;        /* Bit 31 .. 26 */ /* Padding */
     } link_2_link_ctrl_lvc;
 
     /* 0x000C: Control register for link to MVC */
     struct _link_2_link_ctrl_mvc {
-        uint32_t dp_start_adr_mvc1                            :  7;        /* Bit  6 ..  0 */ /* 7-bit Word-Address */
+        uint8_t  dp_start_adr_mvc1                            :  7;        /* Bit  6 ..  0 */ /* 7-bit Word-Address */
         uint32_t padding                                      :  1;        /* Bit  7 ..  7 */ /* Padding */
-        uint32_t dp_end_adr_mvc1                              :  7;        /* Bit 14 ..  8 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
+        uint8_t  dp_end_adr_mvc1                              :  7;        /* Bit 14 ..  8 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
         uint32_t padding_1                                    :  1;        /* Bit 15 .. 15 */ /* Padding */
-        uint32_t dp_start_adr_mvc2                            :  7;        /* Bit 22 .. 16 */ /* 7-bit Word-Address */
+        uint8_t  dp_start_adr_mvc2                            :  7;        /* Bit 22 .. 16 */ /* 7-bit Word-Address */
         uint32_t padding_2                                    :  1;        /* Bit 23 .. 23 */ /* Padding */
-        uint32_t dp_end_adr_mvc2                              :  7;        /* Bit 30 .. 24 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
+        uint8_t  dp_end_adr_mvc2                              :  7;        /* Bit 30 .. 24 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
         uint32_t padding_3                                    :  1;        /* Bit 31 .. 31 */ /* Padding */
     } link_2_link_ctrl_mvc;
 
     /* 0x0010: Control register for link to LVC */
     struct _link_3_link_ctrl_lvc {
-        uint32_t dp_start_adr_lvc                             :  7;        /* Bit  6 ..  0 */ /* 7-bit Word-Address */
+        uint8_t  dp_start_adr_lvc                             :  7;        /* Bit  6 ..  0 */ /* 7-bit Word-Address */
         uint32_t padding                                      :  1;        /* Bit  7 ..  7 */ /* Padding */
-        uint32_t dp_end_adr_lvc                               :  7;        /* Bit 14 ..  8 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
+        uint8_t  dp_end_adr_lvc                               :  7;        /* Bit 14 ..  8 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
         uint32_t padding_1                                    :  1;        /* Bit 15 .. 15 */ /* Padding */
-        uint32_t tx_rep_per                                   :  8;        /* Bit 23 .. 16 */ /* 1 LSB = 1 us */
-        uint32_t auto_xfer_en                                 :  1;        /* Bit 24 .. 24 */ /* 0/1: Disable / Enable */
-        uint32_t xfer_now                                     :  1;        /* Bit 25 .. 25 */ /* 1: initiate Transfer (must be cleared by SW) */
+        uint8_t  tx_rep_per                                   :  8;        /* Bit 23 .. 16 */ /* 1 LSB = 1 us */
+        uint8_t  auto_xfer_en                                 :  1;        /* Bit 24 .. 24 */ /* 0/1: Disable / Enable */
+        uint8_t  xfer_now                                     :  1;        /* Bit 25 .. 25 */ /* 1: initiate Transfer (must be cleared by SW) */
         uint32_t padding_2                                    :  6;        /* Bit 31 .. 26 */ /* Padding */
     } link_3_link_ctrl_lvc;
 
     /* 0x0014: Control register for link to MVC */
     struct _link_3_link_ctrl_mvc {
-        uint32_t dp_start_adr_mvc1                            :  7;        /* Bit  6 ..  0 */ /* 7-bit Word-Address */
+        uint8_t  dp_start_adr_mvc1                            :  7;        /* Bit  6 ..  0 */ /* 7-bit Word-Address */
         uint32_t padding                                      :  1;        /* Bit  7 ..  7 */ /* Padding */
-        uint32_t dp_end_adr_mvc1                              :  7;        /* Bit 14 ..  8 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
+        uint8_t  dp_end_adr_mvc1                              :  7;        /* Bit 14 ..  8 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
         uint32_t padding_1                                    :  1;        /* Bit 15 .. 15 */ /* Padding */
-        uint32_t dp_start_adr_mvc2                            :  7;        /* Bit 22 .. 16 */ /* 7-bit Word-Address */
+        uint8_t  dp_start_adr_mvc2                            :  7;        /* Bit 22 .. 16 */ /* 7-bit Word-Address */
         uint32_t padding_2                                    :  1;        /* Bit 23 .. 23 */ /* Padding */
-        uint32_t dp_end_adr_mvc2                              :  7;        /* Bit 30 .. 24 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
+        uint8_t  dp_end_adr_mvc2                              :  7;        /* Bit 30 .. 24 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
         uint32_t padding_3                                    :  1;        /* Bit 31 .. 31 */ /* Padding */
     } link_3_link_ctrl_mvc;
 
     /* 0x0018: Control register for link to LVC */
     struct _link_4_link_ctrl_lvc {
-        uint32_t dp_start_adr_lvc                             :  7;        /* Bit  6 ..  0 */ /* 7-bit Word-Address */
+        uint8_t  dp_start_adr_lvc                             :  7;        /* Bit  6 ..  0 */ /* 7-bit Word-Address */
         uint32_t padding                                      :  1;        /* Bit  7 ..  7 */ /* Padding */
-        uint32_t dp_end_adr_lvc                               :  7;        /* Bit 14 ..  8 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
+        uint8_t  dp_end_adr_lvc                               :  7;        /* Bit 14 ..  8 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
         uint32_t padding_1                                    :  1;        /* Bit 15 .. 15 */ /* Padding */
-        uint32_t tx_rep_per                                   :  8;        /* Bit 23 .. 16 */ /* 1 LSB = 1 us */
-        uint32_t auto_xfer_en                                 :  1;        /* Bit 24 .. 24 */ /* 0/1: Disable / Enable */
-        uint32_t xfer_now                                     :  1;        /* Bit 25 .. 25 */ /* 1: initiate Transfer (must be cleared by SW) */
+        uint8_t  tx_rep_per                                   :  8;        /* Bit 23 .. 16 */ /* 1 LSB = 1 us */
+        uint8_t  auto_xfer_en                                 :  1;        /* Bit 24 .. 24 */ /* 0/1: Disable / Enable */
+        uint8_t  xfer_now                                     :  1;        /* Bit 25 .. 25 */ /* 1: initiate Transfer (must be cleared by SW) */
         uint32_t padding_2                                    :  6;        /* Bit 31 .. 26 */ /* Padding */
     } link_4_link_ctrl_lvc;
 
     /* 0x001C: Control register for link to MVC */
     struct _link_4_link_ctrl_mvc {
-        uint32_t dp_start_adr_mvc1                            :  7;        /* Bit  6 ..  0 */ /* 7-bit Word-Address */
+        uint8_t  dp_start_adr_mvc1                            :  7;        /* Bit  6 ..  0 */ /* 7-bit Word-Address */
         uint32_t padding                                      :  1;        /* Bit  7 ..  7 */ /* Padding */
-        uint32_t dp_end_adr_mvc1                              :  7;        /* Bit 14 ..  8 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
+        uint8_t  dp_end_adr_mvc1                              :  7;        /* Bit 14 ..  8 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
         uint32_t padding_1                                    :  1;        /* Bit 15 .. 15 */ /* Padding */
-        uint32_t dp_start_adr_mvc2                            :  7;        /* Bit 22 .. 16 */ /* 7-bit Word-Address */
+        uint8_t  dp_start_adr_mvc2                            :  7;        /* Bit 22 .. 16 */ /* 7-bit Word-Address */
         uint32_t padding_2                                    :  1;        /* Bit 23 .. 23 */ /* Padding */
-        uint32_t dp_end_adr_mvc2                              :  7;        /* Bit 30 .. 24 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
+        uint8_t  dp_end_adr_mvc2                              :  7;        /* Bit 30 .. 24 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
         uint32_t padding_3                                    :  1;        /* Bit 31 .. 31 */ /* Padding */
     } link_4_link_ctrl_mvc;
 
     /* 0x0020: Control register for link to LVC */
     struct _link_5_link_ctrl_lvc {
-        uint32_t dp_start_adr_lvc                             :  7;        /* Bit  6 ..  0 */ /* 7-bit Word-Address */
+        uint8_t  dp_start_adr_lvc                             :  7;        /* Bit  6 ..  0 */ /* 7-bit Word-Address */
         uint32_t padding                                      :  1;        /* Bit  7 ..  7 */ /* Padding */
-        uint32_t dp_end_adr_lvc                               :  7;        /* Bit 14 ..  8 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
+        uint8_t  dp_end_adr_lvc                               :  7;        /* Bit 14 ..  8 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
         uint32_t padding_1                                    :  1;        /* Bit 15 .. 15 */ /* Padding */
-        uint32_t tx_rep_per                                   :  8;        /* Bit 23 .. 16 */ /* 1 LSB = 1 us */
-        uint32_t auto_xfer_en                                 :  1;        /* Bit 24 .. 24 */ /* 0/1: Disable / Enable */
-        uint32_t xfer_now                                     :  1;        /* Bit 25 .. 25 */ /* 1: initiate Transfer (must be cleared by SW) */
+        uint8_t  tx_rep_per                                   :  8;        /* Bit 23 .. 16 */ /* 1 LSB = 1 us */
+        uint8_t  auto_xfer_en                                 :  1;        /* Bit 24 .. 24 */ /* 0/1: Disable / Enable */
+        uint8_t  xfer_now                                     :  1;        /* Bit 25 .. 25 */ /* 1: initiate Transfer (must be cleared by SW) */
         uint32_t padding_2                                    :  6;        /* Bit 31 .. 26 */ /* Padding */
     } link_5_link_ctrl_lvc;
 
     /* 0x0024: Control register for link to MVC */
     struct _link_5_link_ctrl_mvc {
-        uint32_t dp_start_adr_mvc1                            :  7;        /* Bit  6 ..  0 */ /* 7-bit Word-Address */
+        uint8_t  dp_start_adr_mvc1                            :  7;        /* Bit  6 ..  0 */ /* 7-bit Word-Address */
         uint32_t padding                                      :  1;        /* Bit  7 ..  7 */ /* Padding */
-        uint32_t dp_end_adr_mvc1                              :  7;        /* Bit 14 ..  8 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
+        uint8_t  dp_end_adr_mvc1                              :  7;        /* Bit 14 ..  8 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
         uint32_t padding_1                                    :  1;        /* Bit 15 .. 15 */ /* Padding */
-        uint32_t dp_start_adr_mvc2                            :  7;        /* Bit 22 .. 16 */ /* 7-bit Word-Address */
+        uint8_t  dp_start_adr_mvc2                            :  7;        /* Bit 22 .. 16 */ /* 7-bit Word-Address */
         uint32_t padding_2                                    :  1;        /* Bit 23 .. 23 */ /* Padding */
-        uint32_t dp_end_adr_mvc2                              :  7;        /* Bit 30 .. 24 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
+        uint8_t  dp_end_adr_mvc2                              :  7;        /* Bit 30 .. 24 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
         uint32_t padding_3                                    :  1;        /* Bit 31 .. 31 */ /* Padding */
     } link_5_link_ctrl_mvc;
 
     /* 0x0028: Control register for link to LVC */
     struct _link_6_link_ctrl_lvc {
-        uint32_t dp_start_adr_lvc                             :  7;        /* Bit  6 ..  0 */ /* 7-bit Word-Address */
+        uint8_t  dp_start_adr_lvc                             :  7;        /* Bit  6 ..  0 */ /* 7-bit Word-Address */
         uint32_t padding                                      :  1;        /* Bit  7 ..  7 */ /* Padding */
-        uint32_t dp_end_adr_lvc                               :  7;        /* Bit 14 ..  8 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
+        uint8_t  dp_end_adr_lvc                               :  7;        /* Bit 14 ..  8 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
         uint32_t padding_1                                    :  1;        /* Bit 15 .. 15 */ /* Padding */
-        uint32_t tx_rep_per                                   :  8;        /* Bit 23 .. 16 */ /* 1 LSB = 1 us */
-        uint32_t auto_xfer_en                                 :  1;        /* Bit 24 .. 24 */ /* 0/1: Disable / Enable */
-        uint32_t xfer_now                                     :  1;        /* Bit 25 .. 25 */ /* 1: initiate Transfer (must be cleared by SW) */
+        uint8_t  tx_rep_per                                   :  8;        /* Bit 23 .. 16 */ /* 1 LSB = 1 us */
+        uint8_t  auto_xfer_en                                 :  1;        /* Bit 24 .. 24 */ /* 0/1: Disable / Enable */
+        uint8_t  xfer_now                                     :  1;        /* Bit 25 .. 25 */ /* 1: initiate Transfer (must be cleared by SW) */
         uint32_t padding_2                                    :  6;        /* Bit 31 .. 26 */ /* Padding */
     } link_6_link_ctrl_lvc;
 
     /* 0x002C: Control register for link to MVC */
     struct _link_6_link_ctrl_mvc {
-        uint32_t dp_start_adr_mvc1                            :  7;        /* Bit  6 ..  0 */ /* 7-bit Word-Address */
+        uint8_t  dp_start_adr_mvc1                            :  7;        /* Bit  6 ..  0 */ /* 7-bit Word-Address */
         uint32_t padding                                      :  1;        /* Bit  7 ..  7 */ /* Padding */
-        uint32_t dp_end_adr_mvc1                              :  7;        /* Bit 14 ..  8 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
+        uint8_t  dp_end_adr_mvc1                              :  7;        /* Bit 14 ..  8 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
         uint32_t padding_1                                    :  1;        /* Bit 15 .. 15 */ /* Padding */
-        uint32_t dp_start_adr_mvc2                            :  7;        /* Bit 22 .. 16 */ /* 7-bit Word-Address */
+        uint8_t  dp_start_adr_mvc2                            :  7;        /* Bit 22 .. 16 */ /* 7-bit Word-Address */
         uint32_t padding_2                                    :  1;        /* Bit 23 .. 23 */ /* Padding */
-        uint32_t dp_end_adr_mvc2                              :  7;        /* Bit 30 .. 24 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
+        uint8_t  dp_end_adr_mvc2                              :  7;        /* Bit 30 .. 24 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
         uint32_t padding_3                                    :  1;        /* Bit 31 .. 31 */ /* Padding */
     } link_6_link_ctrl_mvc;
 
     /* 0x0030: Control register for link to LVC */
     struct _link_7_link_ctrl_lvc {
-        uint32_t dp_start_adr_lvc                             :  7;        /* Bit  6 ..  0 */ /* 7-bit Word-Address */
+        uint8_t  dp_start_adr_lvc                             :  7;        /* Bit  6 ..  0 */ /* 7-bit Word-Address */
         uint32_t padding                                      :  1;        /* Bit  7 ..  7 */ /* Padding */
-        uint32_t dp_end_adr_lvc                               :  7;        /* Bit 14 ..  8 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
+        uint8_t  dp_end_adr_lvc                               :  7;        /* Bit 14 ..  8 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
         uint32_t padding_1                                    :  1;        /* Bit 15 .. 15 */ /* Padding */
-        uint32_t tx_rep_per                                   :  8;        /* Bit 23 .. 16 */ /* 1 LSB = 1 us */
-        uint32_t auto_xfer_en                                 :  1;        /* Bit 24 .. 24 */ /* 0/1: Disable / Enable */
-        uint32_t xfer_now                                     :  1;        /* Bit 25 .. 25 */ /* 1: initiate Transfer (must be cleared by SW) */
+        uint8_t  tx_rep_per                                   :  8;        /* Bit 23 .. 16 */ /* 1 LSB = 1 us */
+        uint8_t  auto_xfer_en                                 :  1;        /* Bit 24 .. 24 */ /* 0/1: Disable / Enable */
+        uint8_t  xfer_now                                     :  1;        /* Bit 25 .. 25 */ /* 1: initiate Transfer (must be cleared by SW) */
         uint32_t padding_2                                    :  6;        /* Bit 31 .. 26 */ /* Padding */
     } link_7_link_ctrl_lvc;
 
     /* 0x0034: Control register for link to MVC */
     struct _link_7_link_ctrl_mvc {
-        uint32_t dp_start_adr_mvc1                            :  7;        /* Bit  6 ..  0 */ /* 7-bit Word-Address */
+        uint8_t  dp_start_adr_mvc1                            :  7;        /* Bit  6 ..  0 */ /* 7-bit Word-Address */
         uint32_t padding                                      :  1;        /* Bit  7 ..  7 */ /* Padding */
-        uint32_t dp_end_adr_mvc1                              :  7;        /* Bit 14 ..  8 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
+        uint8_t  dp_end_adr_mvc1                              :  7;        /* Bit 14 ..  8 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
         uint32_t padding_1                                    :  1;        /* Bit 15 .. 15 */ /* Padding */
-        uint32_t dp_start_adr_mvc2                            :  7;        /* Bit 22 .. 16 */ /* 7-bit Word-Address */
+        uint8_t  dp_start_adr_mvc2                            :  7;        /* Bit 22 .. 16 */ /* 7-bit Word-Address */
         uint32_t padding_2                                    :  1;        /* Bit 23 .. 23 */ /* Padding */
-        uint32_t dp_end_adr_mvc2                              :  7;        /* Bit 30 .. 24 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
+        uint8_t  dp_end_adr_mvc2                              :  7;        /* Bit 30 .. 24 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
         uint32_t padding_3                                    :  1;        /* Bit 31 .. 31 */ /* Padding */
     } link_7_link_ctrl_mvc;
 
     /* 0x0038: Control register for link to LVC */
     struct _link_8_link_ctrl_lvc {
-        uint32_t dp_start_adr_lvc                             :  7;        /* Bit  6 ..  0 */ /* 7-bit Word-Address */
+        uint8_t  dp_start_adr_lvc                             :  7;        /* Bit  6 ..  0 */ /* 7-bit Word-Address */
         uint32_t padding                                      :  1;        /* Bit  7 ..  7 */ /* Padding */
-        uint32_t dp_end_adr_lvc                               :  7;        /* Bit 14 ..  8 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
+        uint8_t  dp_end_adr_lvc                               :  7;        /* Bit 14 ..  8 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
         uint32_t padding_1                                    :  1;        /* Bit 15 .. 15 */ /* Padding */
-        uint32_t tx_rep_per                                   :  8;        /* Bit 23 .. 16 */ /* 1 LSB = 1 us */
-        uint32_t auto_xfer_en                                 :  1;        /* Bit 24 .. 24 */ /* 0/1: Disable / Enable */
-        uint32_t xfer_now                                     :  1;        /* Bit 25 .. 25 */ /* 1: initiate Transfer (must be cleared by SW) */
+        uint8_t  tx_rep_per                                   :  8;        /* Bit 23 .. 16 */ /* 1 LSB = 1 us */
+        uint8_t  auto_xfer_en                                 :  1;        /* Bit 24 .. 24 */ /* 0/1: Disable / Enable */
+        uint8_t  xfer_now                                     :  1;        /* Bit 25 .. 25 */ /* 1: initiate Transfer (must be cleared by SW) */
         uint32_t padding_2                                    :  6;        /* Bit 31 .. 26 */ /* Padding */
     } link_8_link_ctrl_lvc;
 
     /* 0x003C: Control register for link to MVC */
     struct _link_8_link_ctrl_mvc {
-        uint32_t dp_start_adr_mvc1                            :  7;        /* Bit  6 ..  0 */ /* 7-bit Word-Address */
+        uint8_t  dp_start_adr_mvc1                            :  7;        /* Bit  6 ..  0 */ /* 7-bit Word-Address */
         uint32_t padding                                      :  1;        /* Bit  7 ..  7 */ /* Padding */
-        uint32_t dp_end_adr_mvc1                              :  7;        /* Bit 14 ..  8 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
+        uint8_t  dp_end_adr_mvc1                              :  7;        /* Bit 14 ..  8 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
         uint32_t padding_1                                    :  1;        /* Bit 15 .. 15 */ /* Padding */
-        uint32_t dp_start_adr_mvc2                            :  7;        /* Bit 22 .. 16 */ /* 7-bit Word-Address */
+        uint8_t  dp_start_adr_mvc2                            :  7;        /* Bit 22 .. 16 */ /* 7-bit Word-Address */
         uint32_t padding_2                                    :  1;        /* Bit 23 .. 23 */ /* Padding */
-        uint32_t dp_end_adr_mvc2                              :  7;        /* Bit 30 .. 24 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
+        uint8_t  dp_end_adr_mvc2                              :  7;        /* Bit 30 .. 24 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
         uint32_t padding_3                                    :  1;        /* Bit 31 .. 31 */ /* Padding */
     } link_8_link_ctrl_mvc;
 
     /* 0x0040: Control register for link to LVC */
     struct _link_9_link_ctrl_lvc {
-        uint32_t dp_start_adr_lvc                             :  7;        /* Bit  6 ..  0 */ /* 7-bit Word-Address */
+        uint8_t  dp_start_adr_lvc                             :  7;        /* Bit  6 ..  0 */ /* 7-bit Word-Address */
         uint32_t padding                                      :  1;        /* Bit  7 ..  7 */ /* Padding */
-        uint32_t dp_end_adr_lvc                               :  7;        /* Bit 14 ..  8 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
+        uint8_t  dp_end_adr_lvc                               :  7;        /* Bit 14 ..  8 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
         uint32_t padding_1                                    :  1;        /* Bit 15 .. 15 */ /* Padding */
-        uint32_t tx_rep_per                                   :  8;        /* Bit 23 .. 16 */ /* 1 LSB = 1 us */
-        uint32_t auto_xfer_en                                 :  1;        /* Bit 24 .. 24 */ /* 0/1: Disable / Enable */
-        uint32_t xfer_now                                     :  1;        /* Bit 25 .. 25 */ /* 1: initiate Transfer (must be cleared by SW) */
+        uint8_t  tx_rep_per                                   :  8;        /* Bit 23 .. 16 */ /* 1 LSB = 1 us */
+        uint8_t  auto_xfer_en                                 :  1;        /* Bit 24 .. 24 */ /* 0/1: Disable / Enable */
+        uint8_t  xfer_now                                     :  1;        /* Bit 25 .. 25 */ /* 1: initiate Transfer (must be cleared by SW) */
         uint32_t padding_2                                    :  6;        /* Bit 31 .. 26 */ /* Padding */
     } link_9_link_ctrl_lvc;
 
     /* 0x0044: Control register for link to MVC */
     struct _link_9_link_ctrl_mvc {
-        uint32_t dp_start_adr_mvc1                            :  7;        /* Bit  6 ..  0 */ /* 7-bit Word-Address */
+        uint8_t  dp_start_adr_mvc1                            :  7;        /* Bit  6 ..  0 */ /* 7-bit Word-Address */
         uint32_t padding                                      :  1;        /* Bit  7 ..  7 */ /* Padding */
-        uint32_t dp_end_adr_mvc1                              :  7;        /* Bit 14 ..  8 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
+        uint8_t  dp_end_adr_mvc1                              :  7;        /* Bit 14 ..  8 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
         uint32_t padding_1                                    :  1;        /* Bit 15 .. 15 */ /* Padding */
-        uint32_t dp_start_adr_mvc2                            :  7;        /* Bit 22 .. 16 */ /* 7-bit Word-Address */
+        uint8_t  dp_start_adr_mvc2                            :  7;        /* Bit 22 .. 16 */ /* 7-bit Word-Address */
         uint32_t padding_2                                    :  1;        /* Bit 23 .. 23 */ /* Padding */
-        uint32_t dp_end_adr_mvc2                              :  7;        /* Bit 30 .. 24 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
+        uint8_t  dp_end_adr_mvc2                              :  7;        /* Bit 30 .. 24 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
         uint32_t padding_3                                    :  1;        /* Bit 31 .. 31 */ /* Padding */
     } link_9_link_ctrl_mvc;
 
     /* 0x0048: Control register for link to LVC */
     struct _link_10_link_ctrl_lvc {
-        uint32_t dp_start_adr_lvc                             :  7;        /* Bit  6 ..  0 */ /* 7-bit Word-Address */
+        uint8_t  dp_start_adr_lvc                             :  7;        /* Bit  6 ..  0 */ /* 7-bit Word-Address */
         uint32_t padding                                      :  1;        /* Bit  7 ..  7 */ /* Padding */
-        uint32_t dp_end_adr_lvc                               :  7;        /* Bit 14 ..  8 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
+        uint8_t  dp_end_adr_lvc                               :  7;        /* Bit 14 ..  8 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
         uint32_t padding_1                                    :  1;        /* Bit 15 .. 15 */ /* Padding */
-        uint32_t tx_rep_per                                   :  8;        /* Bit 23 .. 16 */ /* 1 LSB = 1 us */
-        uint32_t auto_xfer_en                                 :  1;        /* Bit 24 .. 24 */ /* 0/1: Disable / Enable */
-        uint32_t xfer_now                                     :  1;        /* Bit 25 .. 25 */ /* 1: initiate Transfer (must be cleared by SW) */
+        uint8_t  tx_rep_per                                   :  8;        /* Bit 23 .. 16 */ /* 1 LSB = 1 us */
+        uint8_t  auto_xfer_en                                 :  1;        /* Bit 24 .. 24 */ /* 0/1: Disable / Enable */
+        uint8_t  xfer_now                                     :  1;        /* Bit 25 .. 25 */ /* 1: initiate Transfer (must be cleared by SW) */
         uint32_t padding_2                                    :  6;        /* Bit 31 .. 26 */ /* Padding */
     } link_10_link_ctrl_lvc;
 
     /* 0x004C: Control register for link to MVC */
     struct _link_10_link_ctrl_mvc {
-        uint32_t dp_start_adr_mvc1                            :  7;        /* Bit  6 ..  0 */ /* 7-bit Word-Address */
+        uint8_t  dp_start_adr_mvc1                            :  7;        /* Bit  6 ..  0 */ /* 7-bit Word-Address */
         uint32_t padding                                      :  1;        /* Bit  7 ..  7 */ /* Padding */
-        uint32_t dp_end_adr_mvc1                              :  7;        /* Bit 14 ..  8 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
+        uint8_t  dp_end_adr_mvc1                              :  7;        /* Bit 14 ..  8 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
         uint32_t padding_1                                    :  1;        /* Bit 15 .. 15 */ /* Padding */
-        uint32_t dp_start_adr_mvc2                            :  7;        /* Bit 22 .. 16 */ /* 7-bit Word-Address */
+        uint8_t  dp_start_adr_mvc2                            :  7;        /* Bit 22 .. 16 */ /* 7-bit Word-Address */
         uint32_t padding_2                                    :  1;        /* Bit 23 .. 23 */ /* Padding */
-        uint32_t dp_end_adr_mvc2                              :  7;        /* Bit 30 .. 24 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
+        uint8_t  dp_end_adr_mvc2                              :  7;        /* Bit 30 .. 24 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
         uint32_t padding_3                                    :  1;        /* Bit 31 .. 31 */ /* Padding */
     } link_10_link_ctrl_mvc;
 
     /* 0x0050: Control register for link to LVC */
     struct _link_11_link_ctrl_lvc {
-        uint32_t dp_start_adr_lvc                             :  7;        /* Bit  6 ..  0 */ /* 7-bit Word-Address */
+        uint8_t  dp_start_adr_lvc                             :  7;        /* Bit  6 ..  0 */ /* 7-bit Word-Address */
         uint32_t padding                                      :  1;        /* Bit  7 ..  7 */ /* Padding */
-        uint32_t dp_end_adr_lvc                               :  7;        /* Bit 14 ..  8 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
+        uint8_t  dp_end_adr_lvc                               :  7;        /* Bit 14 ..  8 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
         uint32_t padding_1                                    :  1;        /* Bit 15 .. 15 */ /* Padding */
-        uint32_t tx_rep_per                                   :  8;        /* Bit 23 .. 16 */ /* 1 LSB = 1 us */
-        uint32_t auto_xfer_en                                 :  1;        /* Bit 24 .. 24 */ /* 0/1: Disable / Enable */
-        uint32_t xfer_now                                     :  1;        /* Bit 25 .. 25 */ /* 1: initiate Transfer (must be cleared by SW) */
+        uint8_t  tx_rep_per                                   :  8;        /* Bit 23 .. 16 */ /* 1 LSB = 1 us */
+        uint8_t  auto_xfer_en                                 :  1;        /* Bit 24 .. 24 */ /* 0/1: Disable / Enable */
+        uint8_t  xfer_now                                     :  1;        /* Bit 25 .. 25 */ /* 1: initiate Transfer (must be cleared by SW) */
         uint32_t padding_2                                    :  6;        /* Bit 31 .. 26 */ /* Padding */
     } link_11_link_ctrl_lvc;
 
     /* 0x0054: Control register for link to MVC */
     struct _link_11_link_ctrl_mvc {
-        uint32_t dp_start_adr_mvc1                            :  7;        /* Bit  6 ..  0 */ /* 7-bit Word-Address */
+        uint8_t  dp_start_adr_mvc1                            :  7;        /* Bit  6 ..  0 */ /* 7-bit Word-Address */
         uint32_t padding                                      :  1;        /* Bit  7 ..  7 */ /* Padding */
-        uint32_t dp_end_adr_mvc1                              :  7;        /* Bit 14 ..  8 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
+        uint8_t  dp_end_adr_mvc1                              :  7;        /* Bit 14 ..  8 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
         uint32_t padding_1                                    :  1;        /* Bit 15 .. 15 */ /* Padding */
-        uint32_t dp_start_adr_mvc2                            :  7;        /* Bit 22 .. 16 */ /* 7-bit Word-Address */
+        uint8_t  dp_start_adr_mvc2                            :  7;        /* Bit 22 .. 16 */ /* 7-bit Word-Address */
         uint32_t padding_2                                    :  1;        /* Bit 23 .. 23 */ /* Padding */
-        uint32_t dp_end_adr_mvc2                              :  7;        /* Bit 30 .. 24 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
+        uint8_t  dp_end_adr_mvc2                              :  7;        /* Bit 30 .. 24 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
         uint32_t padding_3                                    :  1;        /* Bit 31 .. 31 */ /* Padding */
     } link_11_link_ctrl_mvc;
 
     /* 0x0058: Control register for link to LVC */
     struct _link_12_link_ctrl_lvc {
-        uint32_t dp_start_adr_lvc                             :  7;        /* Bit  6 ..  0 */ /* 7-bit Word-Address */
+        uint8_t  dp_start_adr_lvc                             :  7;        /* Bit  6 ..  0 */ /* 7-bit Word-Address */
         uint32_t padding                                      :  1;        /* Bit  7 ..  7 */ /* Padding */
-        uint32_t dp_end_adr_lvc                               :  7;        /* Bit 14 ..  8 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
+        uint8_t  dp_end_adr_lvc                               :  7;        /* Bit 14 ..  8 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
         uint32_t padding_1                                    :  1;        /* Bit 15 .. 15 */ /* Padding */
-        uint32_t tx_rep_per                                   :  8;        /* Bit 23 .. 16 */ /* 1 LSB = 1 us */
-        uint32_t auto_xfer_en                                 :  1;        /* Bit 24 .. 24 */ /* 0/1: Disable / Enable */
-        uint32_t xfer_now                                     :  1;        /* Bit 25 .. 25 */ /* 1: initiate Transfer (must be cleared by SW) */
+        uint8_t  tx_rep_per                                   :  8;        /* Bit 23 .. 16 */ /* 1 LSB = 1 us */
+        uint8_t  auto_xfer_en                                 :  1;        /* Bit 24 .. 24 */ /* 0/1: Disable / Enable */
+        uint8_t  xfer_now                                     :  1;        /* Bit 25 .. 25 */ /* 1: initiate Transfer (must be cleared by SW) */
         uint32_t padding_2                                    :  6;        /* Bit 31 .. 26 */ /* Padding */
     } link_12_link_ctrl_lvc;
 
     /* 0x005C: Control register for link to MVC */
     struct _link_12_link_ctrl_mvc {
-        uint32_t dp_start_adr_mvc1                            :  7;        /* Bit  6 ..  0 */ /* 7-bit Word-Address */
+        uint8_t  dp_start_adr_mvc1                            :  7;        /* Bit  6 ..  0 */ /* 7-bit Word-Address */
         uint32_t padding                                      :  1;        /* Bit  7 ..  7 */ /* Padding */
-        uint32_t dp_end_adr_mvc1                              :  7;        /* Bit 14 ..  8 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
+        uint8_t  dp_end_adr_mvc1                              :  7;        /* Bit 14 ..  8 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
         uint32_t padding_1                                    :  1;        /* Bit 15 .. 15 */ /* Padding */
-        uint32_t dp_start_adr_mvc2                            :  7;        /* Bit 22 .. 16 */ /* 7-bit Word-Address */
+        uint8_t  dp_start_adr_mvc2                            :  7;        /* Bit 22 .. 16 */ /* 7-bit Word-Address */
         uint32_t padding_2                                    :  1;        /* Bit 23 .. 23 */ /* Padding */
-        uint32_t dp_end_adr_mvc2                              :  7;        /* Bit 30 .. 24 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
+        uint8_t  dp_end_adr_mvc2                              :  7;        /* Bit 30 .. 24 */ /* 7-bit Word-Address (Must be larger than dp_start_adr) */
         uint32_t padding_3                                    :  1;        /* Bit 31 .. 31 */ /* Padding */
     } link_12_link_ctrl_mvc;
 
     /* 0x0060: gpo */
     struct _gpo_1_gpo {
-        uint32_t d_out_24v                                    :  8;        /* Bit  7 ..  0 */ /* 0/1: off/on */
+        uint8_t  d_out_24v                                    :  8;        /* Bit  7 ..  0 */ /* 0/1: off/on */
         uint32_t padding                                      :  1;        /* Bit  8 ..  8 */ /* Padding */
-        uint32_t led                                          :  4;        /* Bit 12 ..  9 */ /* 1: led on */
+        uint8_t  led                                          :  4;        /* Bit 12 ..  9 */ /* 1: led on */
         uint32_t padding_1                                    : 19;        /* Bit 31 .. 13 */ /* Padding */
     } gpo_1_gpo;
 
